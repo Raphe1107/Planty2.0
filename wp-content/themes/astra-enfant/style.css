@@ -3,3 +3,22 @@
     Template: astra
     Version: 1.0
 */
+
+* {
+box-sizing: border-box;
+}
+
+.navbar_header li{
+display: flex;
+justify-content: flex-end;
+}
+
+footer {
+display: flex;
+justify-content: center;
+}
+
+#menu-footer {
+list-style: none;
+padding-right: 65px;
+}
