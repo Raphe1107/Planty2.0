@@ -4,18 +4,99 @@
     Version: 1.0
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
 * {
 box-sizing: border-box;
 }
 
-.navbar_header li{
+.page {
+max-width: 1440px;
+margin: 0 auto;
+border-left : 1px solid lightgray;
+border-right : 1px solid lightgray;
+font-family: 'Syne', sans-serif;
+}
+
+.navbar_header {
 display: flex;
 justify-content: flex-end;
+padding-top: 30px;
+padding-bottom: 30px;
+margin: 0;
 }
+
+.navbar_header li{
+list-style: none;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+#logo {
+width : 300px;
+height: 50px;
+
+}
+
+.line-undertitle {
+border : solid 1px white;
+}
+
+.compteurboutton {
+display:flex;
+}
+
+.zero {
+background-color: white;
+color: black;
+padding: 15px 35px 15px 35px;
+border-radius: 10px 0px 0px 10px;
+margin-bottom: 5px;
+}
+
+.plusetmoins {
+color: white;
+background-color: #dc9f96;
+padding: 0px 10px 0px 10px;
+border-radius: 0px 10px 10px 0px;
+margin-bottom: 5px;
+}
+
+.separationplus {
+border-top: 1px solid white;
+margin : -10px;
+}
+
+.plus {
+margin: 5px;
+padding :0;
+}
+
+.moins {
+margin: 6px;
+margin-bottom: -5px;
+}
+
+.bouttonok {
+color : white;
+background-color: #E0B9B4;
+margin-left: 15px;
+padding: 20px 50px 22px 50px;
+border-radius: 5px;
+font-weight: 100;
+}
+
+.bouttonok:hover {
+background-color: #dc9f96;
+color : white;
+}
+
 
 footer {
 display: flex;
 justify-content: center;
+border-left : 1px solid lightgray;
+border-right : 1px solid lightgray;
 }
 
 #menu-footer {
