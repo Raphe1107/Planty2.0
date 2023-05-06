@@ -17,12 +17,22 @@ border-left : 1px solid lightgray;
 border-right : 1px solid lightgray;
 font-family: 'Syne', sans-serif;
 }
+.custom-logo {
+width: 250px;
+padding-left: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.logomenu {
+display : flex;
+
+}
+
 
 .navbar_header {
 display: flex;
-justify-content: flex-end;
-padding-top: 30px;
-padding-bottom: 30px;
+padding-left: 655px;
 margin: 0;
 }
 
@@ -30,8 +40,21 @@ margin: 0;
 list-style: none;
 padding-left: 50px;
 padding-right: 50px;
+display: flex;
+align-items: center;
 }
 
+#menu-item-24 {
+padding-right : 0px;
+}
+#menu-item-23 {
+background-color: #DC9F96;
+
+}
+#menu-item-23 a {
+color: white;
+font-weight: lighter;
+}
 #logo {
 width : 300px;
 height: 50px;
@@ -106,16 +129,18 @@ color: white;
 font-size: 30px;
 font-weight: bold;
 font-family: 'Syne', sans-serif;
+padding-bottom: 15px;
 }
 
 .separationform {
 border: solid 1px white;
-height: 525px;
+height: 465px;
 margin: 20px 20px 55px 20px;
 }
 
 .champsaisie {
 padding-bottom: 45px;
+margin-top: -25px;
 }
 
 
@@ -124,7 +149,7 @@ padding-bottom: 45px;
 color: white;
 background-color: #E0B9B4;
 display: flex;
-margin: 30px 10px 30px -105px;
+margin: 0px 10px 30px -105px;
 border-radius: 5px;
 text-transform: none;
 font-weight: 300;

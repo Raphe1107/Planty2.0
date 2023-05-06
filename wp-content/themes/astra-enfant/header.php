@@ -27,10 +27,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php astra_head_bottom(); ?>
 </head>
 
+
 <body <?php astra_schema_body(); ?> <?php body_class(); ?>>
 
 <?php astra_body_top(); ?>
 <?php wp_body_open(); ?>
+
 
 
 
@@ -45,31 +47,48 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="page">
 	
-	<header>
-	<img src="image/planty.png">
+	
+	
+	
+	
+	
 	<?php
 	
-	wp_nav_menu([
-        'theme_location' => 'header',
-        'container' => false,
-        'menu_class' => 'navbar_header',
-    ]); 
+	astra_header_before();
 	
-	
-	
+	astra_header();
+	 
+
+	astra_header_after();
 	
     
 
+
+	astra_content_before();
 	
+	
+?>
+
+
 
 	
 	
-	?>
+
 	
-	</header>
 	<div id="content" class="site-content">
+		<div class= "logomenu">
+	<?php the_custom_logo(); ?>
+	<?php
+	
+		wp_nav_menu([
+        'theme_location' => 'header',
+        'container' => false,
+        'menu_class' => 'navbar_header',
+    ]); ?> </div>
 		<div class="ast-container">
+			
 		<?php astra_content_top(); ?>
+		
         
    
         
