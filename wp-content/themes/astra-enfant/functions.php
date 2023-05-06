@@ -12,6 +12,22 @@
 
     add_action ( 'after_setup_theme', 'astra_enfant_menus' );
 
-   
+    
+    function add_admin_link_to_menu( $items, $args ) {
+        if ( is_user_logged_in() && $args->theme_location == 'header' ) {
+            $admin_link = '<li><a href="' . admin_url() . '">Admin</a></li>';
+            // divise la chaîne en tableau d'éléments de menu
+            $menu_items = explode( '</li>', $items );
+            // insère l'élément "Admin" en deuxième position
+            array_splice( $menu_items, 1, 0, $admin_link );
+            // fusionne les éléments de menu modifiés en une chaîne
+            $items = implode( '</li>', $menu_items );
+        }
+        return $items;
+    }
+    add_filter( 'wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2 );
+    
+    
+    
     
 ?>
