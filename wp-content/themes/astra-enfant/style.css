@@ -77,7 +77,7 @@ margin: 6px;
 margin-bottom: -5px;
 }
 
-.bouttonok {
+.boutonok {
 color : white;
 background-color: #E0B9B4;
 margin-left: 15px;
@@ -86,10 +86,57 @@ border-radius: 5px;
 font-weight: 100;
 }
 
-.bouttonok:hover {
+.boutonok:hover {
 background-color: #dc9f96;
 color : white;
 }
+
+.line-underpicture {
+border : solid 1px white;
+}
+
+.form2 {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.form2 h3 {
+color: white;
+font-size: 30px;
+font-weight: bold;
+font-family: 'Syne', sans-serif;
+}
+
+.separationform {
+border: solid 1px white;
+height: 525px;
+margin: 20px 20px 55px 20px;
+}
+
+.champsaisie {
+padding-bottom: 45px;
+}
+
+
+
+.boutonform {
+color: white;
+background-color: #E0B9B4;
+display: flex;
+margin: 30px 10px 30px -105px;
+border-radius: 5px;
+text-transform: none;
+font-weight: 300;
+font-family: 'Syne', sans-serif;
+padding: 20px 50px 20px 50px;
+}
+
+.boutonform:hover {
+background-color: #dc9f96;
+color : white;
+}
+
 
 
 footer {
@@ -102,4 +149,5 @@ border-right : 1px solid lightgray;
 #menu-footer {
 list-style: none;
 padding-right: 65px;
+margin-top: 20px;
 }
