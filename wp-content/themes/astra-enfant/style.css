@@ -4,6 +4,7 @@
     Version: 1.0
 */
 
+/* On importe la police Syne */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 
 * {
@@ -17,6 +18,8 @@ border-left : 1px solid lightgray;
 border-right : 1px solid lightgray;
 font-family: 'Syne', sans-serif;
 }
+
+/* Logo */
 .custom-logo {
 width: 250px;
 padding-left: 20px;
@@ -25,6 +28,7 @@ padding-bottom: 20px;
 margin : 0;
 }
 
+/* Header */
 .logomenu {
 display : flex;
 }
@@ -118,6 +122,8 @@ color : white;
 border : solid 1px white;
 }
 
+
+/* Formulaire  page commander */
 .form2 {
 display: flex;
 align-items: center;
@@ -132,6 +138,7 @@ font-family: 'Syne', sans-serif;
 padding-bottom: 15px;
 }
 
+/* Ligne verticale  */
 .separationform {
 border: solid 1px white;
 height: 465px;
@@ -175,4 +182,59 @@ border-right : 1px solid lightgray;
 list-style: none;
 padding-right: 65px;
 margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+.compteurboutton {
+display: block;
+}
+
+.plusetmoins {
+border-radius: 10px;
+}
+
+.zero {
+display: flex;
+justify-content: center;
+border-radius: 10px;
+}
+
+.plus {
+display: flex;
+justify-content: center;
+}
+
+.moins {
+display: flex;
+justify-content: center;
+margin-bottom: 15px;
+}
+
+.boutonok {
+margin-left: 55px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+.logomenu {
+display : none;
+}
+
+.compteurboutton {
+display: flex;
+}
+
+.zero {
+border-radius: 10px 0px 0px 10px;
+}
+
+.plusetmoins {
+border-radius: 0px 10px 10px 0px;
+}
+
+.boutonok {
+margin-top: 5px;
+}
 }

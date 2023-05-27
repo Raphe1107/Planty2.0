@@ -76,10 +76,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	
 	<div id="content" class="site-content">
+	<!-- Logo -->
 		<div class= "logomenu">
 	<?php the_custom_logo(); ?>
 	<?php
-	
+	// Menu header
 		wp_nav_menu([
         'theme_location' => 'header',
         'container' => false,

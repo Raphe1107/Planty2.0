@@ -29,6 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 	</div><!-- #page -->
     <footer>
+	<!-- Menu footer -->
     <?php
         wp_nav_menu([
             'theme_location' => 'footer',
